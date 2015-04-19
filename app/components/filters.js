@@ -7,12 +7,9 @@ angular.module('firstAngularAppFilters', []).filter('equalSearchString', functio
 		var item = items[i];
 		
 		var itemName = item.name.toLowerCase();
-		console.log(itemName);
-		console.log(itemName.indexOf(searchString.toLowerCase()));
 		if(itemName.indexOf(searchString.toLowerCase()) > -1)
 		{
 			filteredItems.push(item);
-			console.log('yay ' + itemName);
 		}
   	}
   	
