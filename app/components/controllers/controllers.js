@@ -2,21 +2,37 @@
 
 var recipesListController = angular.module('recipesListController', []);
 
-recipesListController.controller('recipesListCtrl', function ($scope, $filter){
-	
+//Get all the recipes from the .json file and filter them by scope.myInput.recipe
+recipesListController.controller('recipesListCtrl', ['$scope', '$routeParams', '$http', '$location', '$filter',
+	function($scope, $routeParams, $http, $location, $filter) {
+		$scope.searchRecipes = function(){
+			var recipes = [];
+			$location.path('view1');
+			$http.get('recipes/recipes.json').success(function(data) {
+				recipes = data;
 
-	$scope.testFunction = function(){
-		var recipes = [
-		{'name': 'Chicken rice'},
-		{'name': 'Chicken & rice'},
-		{'name': 'Pasta carbonara'},
-		{'name': 'Fried chicken'},
-		{'name': 'Pasta bolognese'},
-		{'name': 'French fries'},
-		{'name': 'Baked potato'}
-	];
+				$scope.recipes = $filter('equalSearchString')(recipes, $scope.myInput.recipe);
 
-	$scope.recipes = $filter('equalSearchString')(recipes, $scope.myInput.recipe);
-	
-	};
-});
+			});
+
+
+		};
+
+
+
+	}]);
+
+//Gets data for the selected recipe
+recipesListController.controller('recipeItemCtrl', ['$scope', '$routeParams', '$http',
+	function($scope, $routeParams, $http){
+
+		var url = 'recipes/' + $routeParams.recipeId + '.json';
+
+		$http.get(url).success(function(data) {
+			$scope.selectedRecipe = data;
+			console.log(data.ingredients);
+		});
+
+		console.log($routeParams.recipeId);
+
+	}]);

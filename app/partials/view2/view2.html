@@ -1,0 +1,19 @@
+<div class="recipeItem">
+<img ng-src="{{selectedRecipe.image}}" class="recipeImage">
+<h1>{{selectedRecipe.name}}</h1>
+{{selectedRecipe.description}}
+<div class="recipeContainer">
+	<div class="recipeIngredientsList">
+	Ingredients
+		<ul>
+			<li ng-repeat="ingredient in selectedRecipe.ingredients">
+				{{ingredient.name}} {{ingredient.amount}}
+			</li>
+		</ul>
+	</div>
+	<div class="recipeInstructions">
+	{{selectedRecipe.instructions}}
+	</div>
+</div>
+</div>
+
