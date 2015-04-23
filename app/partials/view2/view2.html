@@ -1,3 +1,14 @@
+<aside class="leftSideMenu">
+<ul class="suggestedRecipeItemList">
+		<li ng-repeat="recipe in recipes" class="suggestedRecipeListItem">
+			<a href="#/view1/{{recipe.id}}">
+				<img ng-src="{{recipe.image}}" class="recipeListItemImage">
+				<h1>{{recipe.name}}</h1>
+			</a>
+		</li>
+	</ul>
+</aside>
+
 <div class="recipeItem">
 <img ng-src="{{selectedRecipe.image}}" class="recipeImage">
 <h1>{{selectedRecipe.name}}</h1>

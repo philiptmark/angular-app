@@ -19,7 +19,7 @@
 <body>
 <div class="siteContentContainer">
 <header>
-<h1><a href="index.html#/startView">Recipeguide</a></h1>
+<h1><a href="index.html#/startView">Receptguiden</a></h1>
 </header>
 
  
@@ -29,14 +29,11 @@
   <![endif]-->
   <div ng-controller="recipesListCtrl">
   <div class="searchInput">
-<input ng-model="myInput.recipe" placeholder="Search for a recipe..."><button ng-click='searchRecipes()'>Click</button>
+<input ng-model="myInput.recipe" placeholder="Sök recept..."><button ng-click='searchRecipes()'>Sök</button>
 </div>
-<aside class="leftSideMenu">
-LEFT SIDE!
-</aside>
-<div class="mainContentContainer">
+
   <div ng-view></div>
-</div>
+
   </div>
 </div>
   <!-- In production use:

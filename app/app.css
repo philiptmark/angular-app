@@ -27,35 +27,6 @@ header h1 a{
   background-color: #fff;
 }
 
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
-}
-
-.menu:before {
-  content: "[";
-}
-
-.menu:after {
-  content: "]";
-}
-
-.menu > li {
-  display: inline;
-}
-
-.menu > li:before {
-  content: "|";
-  padding-right: 0.3em;
-}
-
-.menu > li:nth-child(1):before {
-  content: "";
-  padding: 0;
-}
-
 .searchInput{
   margin-top: 15px;
   display: block;
@@ -67,6 +38,23 @@ header h1 a{
   vertical-align: top;
   width: 20%;
   margin-top: 20px;
+  margin-right: 5px;
+}
+
+.suggestedRecipeItemList{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+}
+
+.suggestedRecipeListItem{
+  background-color: #1d5856;
+}
+
+.suggestedRecipeListItem a{
+  text-decoration: none;
+  color: #fff;
 }
 
 .startViewContainer{
@@ -111,7 +99,19 @@ box-sizing: border-box;         /* Opera/IE 8+ */
   font-size: 22px;
 }
 
+.recipeListItemImage{
+  width: 100%;
+  height: auto;
+  background: url(../assets/images/beachbackground.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .recipeItem{
+  display: inline-block;
+  width: 50%;
 margin-top: 25px;
 }
 

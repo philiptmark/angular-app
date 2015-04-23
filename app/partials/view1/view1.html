@@ -1,8 +1,14 @@
-<ul class="recipeList">
-<li ng-repeat="recipe in recipes" class="recipeListItem">
-<a href="#/view1/{{recipe.id}}">
-<h1>{{recipe.name}}</h1>
-{{recipe.snippet}}
-</a>
-</li>
-</ul>
+<aside class="leftSideMenu">
+FILTER
+</aside>
+<div class="mainContentContainer">
+	<ul class="recipeList">
+		<li ng-repeat="recipe in recipes" class="recipeListItem">
+			<a href="#/view1/{{recipe.id}}">
+				<img ng-src="{{recipe.image}}" class="recipeListItemImage">
+				<h1>{{recipe.name}}</h1>
+				{{recipe.snippet}}
+			</a>
+		</li>
+	</ul>
+</div>
