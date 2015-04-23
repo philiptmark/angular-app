@@ -20,11 +20,12 @@ header h1 a{
 }
 
 .siteContentContainer{
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 1%;
   padding-left: 1%;
   background-color: #fff;
+  max-width: 1344px;
 }
 
 .searchInput{
