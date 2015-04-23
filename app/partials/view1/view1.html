@@ -4,7 +4,7 @@ FILTER
 <div class="mainContentContainer">
 	<ul class="recipeList">
 		<li ng-repeat="recipe in recipes" class="recipeListItem">
-			<a href="#/view1/{{recipe.id}}">
+			<a href="#/view1/{{recipe.id}}/{{recipe.keyword}}">
 				<img ng-src="{{recipe.image}}" class="recipeListItemImage">
 				<h1>{{recipe.name}}</h1>
 				{{recipe.snippet}}

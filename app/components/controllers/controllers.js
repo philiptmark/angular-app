@@ -23,8 +23,8 @@ recipesListController.controller('recipesListCtrl', ['$scope', '$routeParams', '
 	}]);
 
 //Gets data for the selected recipe
-recipesListController.controller('recipeItemCtrl', ['$scope', '$routeParams', '$http',
-	function($scope, $routeParams, $http){
+recipesListController.controller('recipeItemCtrl', ['$scope', '$routeParams', '$http', '$filter',
+	function($scope, $routeParams, $http, $filter){
 
 		var url = 'recipes/' + $routeParams.recipeId + '.json';
 
@@ -34,5 +34,18 @@ recipesListController.controller('recipeItemCtrl', ['$scope', '$routeParams', '$
 		});
 
 		console.log($routeParams.recipeId);
+		console.log('searchTerm: ' + $routeParams.keyword);
+
+		
+			var recipes = [];
+			$http.get('recipes/recipes.json').success(function(data) {
+				recipes = data;
+
+				$scope.recipes = $filter('keyword')(recipes, $routeParams.keyword);
+
+			});
+
+
+		
 
 	}]);

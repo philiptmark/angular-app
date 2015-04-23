@@ -21,7 +21,7 @@ when('/view2',{
 	templateUrl: 'partials/view2/view2.html',
 	controller: 'recipeItemCtrl'
 }).
-when('/view1/:recipeId',{
+when('/view1/:recipeId/:keyword',{
 	templateUrl: 'partials/view2/view2.html',
 	controller: 'recipeItemCtrl'
 }).

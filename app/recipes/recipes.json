@@ -3,43 +3,50 @@
 		"id": "fc439c91-2d57-44d0-9c56-bfa03182b6e2",
         "image": "images/chicken.jpg",
         "name": "Chicken and rice",
-        "snippet": "Try it with curry!"
+        "snippet": "Try it with curry!",
+        "keyword": "chicken"
     },
     {
     	"id": "b8c14b5d-1511-4c6d-89b9-328a18f52d93",
         "image": "images/friedchicken.jpg",
         "name": "Chicken broth Ramen",
-        "snippet": "With eggs, pork and amazing broth."
+        "snippet": "With eggs, pork and amazing broth.",
+        "keyword": "chicken"
     },
     {
     	"id": "2bfa9793-4ca8-4084-beb6-1bd84199a3c6",
         "image": "images/friedchicken.jpg",
         "name": "Tasty fried chicken",
-        "snippet": "Tasty!"
+        "snippet": "Tasty!",
+        "keyword": "chicken"
     },
     {
     	"id": "0168eac4-f67a-4ffb-bded-c9009514ff36",
         "image": "images/chicken.jpg",
         "name": "Carbonara",
-        "snippet": "Italian? Yup!"
+        "snippet": "Italian? Yup!",
+        "keyword": "spaghetti"
     },
     {
         "id": "b8c14b5d-1511-4c6d-89b9-328a18f52d93",
         "image": "images/friedchicken.jpg",
         "name": "Chicken broth Ramen",
-        "snippet": "With eggs, pork and amazing broth."
+        "snippet": "With eggs, pork and amazing broth.",
+        "keyword": "chicken"
+    },
+    {
+        "id": "0168eac4-f67a-4ffb-bded-c9009514ff36",
+        "image": "images/chicken.jpg",
+        "name": "Bolognese",
+        "snippet": "Italian? Yup!",
+        "keyword": "spaghetti"
     },
     {
         "id": "0168eac4-f67a-4ffb-bded-c9009514ff36",
         "image": "images/chicken.jpg",
         "name": "Carbonara",
-        "snippet": "Italian? Yup!"
-    },
-    {
-        "id": "0168eac4-f67a-4ffb-bded-c9009514ff36",
-        "image": "images/chicken.jpg",
-        "name": "Carbonara",
-        "snippet": "Italian? Yup!"
+        "snippet": "Italian? Yup!",
+        "keyword": "spaghetti"
     }
     
 
